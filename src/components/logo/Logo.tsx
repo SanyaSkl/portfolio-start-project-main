@@ -6,7 +6,7 @@ import styled from "styled-components";
 export const Logo = () => {
     return (
 
-        <a href="">
+        <a href="#">
             <StyledLogo src={logo} alt='logo'/>
         </a>
     );

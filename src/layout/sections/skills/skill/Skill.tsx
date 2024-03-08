@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon} from "./icon/Icon";
+import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 
 type SkillIconPropsType = {
@@ -7,7 +7,7 @@ type SkillIconPropsType = {
     title: string
 }
 
-export const SkillIcon = (props: SkillIconPropsType) => {
+export const Skill = (props: SkillIconPropsType) => {
     return (
         <StyledSkill>
             <Icon iconId={props.iconId}/>

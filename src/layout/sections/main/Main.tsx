@@ -7,12 +7,12 @@ export const Main = () => {
     return (
         <StyledMain>
             <FlexWrapper align={"center"} justify={"space-around"}>
-                <div>
+                <StyledTitle>
                     <span>Hi 👋,</span>
                     <StyledSpan> My name is </StyledSpan>
                     <StyledName>Sklyarenko AA</StyledName>
                     <StyledMainTitle>I Frontend Developer</StyledMainTitle>
-                </div>
+                </StyledTitle>
                 <StyledPhoto src={photo}/>
             </FlexWrapper>
         </StyledMain>
@@ -20,10 +20,15 @@ export const Main = () => {
 };
 
 
-
-
-const StyledMain = styled.div `
+const StyledMain = styled.div`
   min-height: 100vh;
+  width: 1600px;
+  height: 1024px;
+  background-color: #191919;
+`
+
+const StyledTitle = styled.section `
+    color: #D9D9D9;
 `
 
 
@@ -38,14 +43,14 @@ const StyledPhoto = styled.img`
 
 `
 
-const StyledMainTitle = styled.h1 `
+const StyledMainTitle = styled.h1`
 
 `
 
-const StyledName = styled.h2 `
+const StyledName = styled.h2`
 
 `
 
-export const StyledSpan = styled.div `
-    
+export const StyledSpan = styled.div`
+
 `

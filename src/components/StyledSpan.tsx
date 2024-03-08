@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSpan = styled.span `
-color: #CCCCCC;
+export const StyledSpan = styled.div`
+  text-align: center;
+  color: #CCCCCC;
 `

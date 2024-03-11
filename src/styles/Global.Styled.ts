@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme";
 
 
 export const GlobalStyled = createGlobalStyle `
@@ -31,4 +32,17 @@ export const GlobalStyled = createGlobalStyle `
     background-color: unset;
     border: none;
   }
+  
+  section {
+    background-color: ${theme.colors.primaryBg};
+  }
+  
+  h1 {
+    color: #D9D9D9;
+  }
+  
+  h2, h3, span, p {
+    color: #CCCCCC;
+  }
+  
 `

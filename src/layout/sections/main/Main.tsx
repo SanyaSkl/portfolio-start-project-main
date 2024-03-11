@@ -37,6 +37,7 @@ const StyledPhoto = styled.img`
   height: 249px;
   border-radius: 230px;
   object-fit: cover;
+  background-position: 150px;
   background-size: 300px;
   border: 9px solid #E70FAA;
 

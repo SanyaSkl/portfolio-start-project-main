@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+import {GlobalStyled} from "./styles/Global.Styled";
 
 
 const root = ReactDOM.createRoot(
@@ -10,6 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
+        <GlobalStyled/>
         <App/>
     </React.StrictMode>
 );

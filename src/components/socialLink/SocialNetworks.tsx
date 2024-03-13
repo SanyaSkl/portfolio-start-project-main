@@ -2,6 +2,7 @@ import React from 'react';
 import {Icon} from "../icon/Icon";
 import styled from "styled-components";
 
+
 export const SocialNetworks = () => {
     return (
         <SocialList>
@@ -26,7 +27,7 @@ export const SocialNetworks = () => {
 
 const SocialList = styled.ul`
   display: flex;
-  gap: 30px;
+  gap: 10px;
 `
 
 const SocialItem = styled.li`

@@ -6,7 +6,7 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledHeaderMenu>
             <ul>
-                {props. menuItems.map((item, index) => {
+                {props.menuItems.map((item, index) => {
                     return <ListItem key={index}>
                         <Link href="#">{item}</Link>
                     </ListItem>

@@ -1,5 +1,3 @@
-
-
 export const theme = {
     colors: {
         primaryBg: "#191919",

@@ -24,13 +24,13 @@ export const Skill = (props: SkillIconPropsType) => {
 
 const StyledSkill = styled.div`
   width: 22%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
 
 `
 
 const SkillTitle = styled.h3`
-  color: #CCCCCC;
+  margin: 30px 0 25px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 `

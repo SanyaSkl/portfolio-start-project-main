@@ -9,5 +9,5 @@ export const StyledSpan = styled.span`
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0;
-  padding-bottom: 145px;
+  padding-bottom: 100px;
 `

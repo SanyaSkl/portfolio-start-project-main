@@ -3,6 +3,7 @@ import photo from '../../../assets/images/photo2.jpg'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../../components/AbstractRectangle";
 
 export const Main = () => {
     return (
@@ -16,7 +17,11 @@ export const Main = () => {
                         <StyledMainTitle>I Frontend Developer</StyledMainTitle>
                     </StyledTitle>
                     <Abstract>
-                        <Rectangle/>
+                        <Rectangle1/>
+                        <Rectangle2/>
+                        <Rectangle3/>
+                        <Rectangle4/>
+                        <Rectangle5/>
                         <StyledPhoto src={photo}/>
                     </Abstract>
                 </FlexWrapper>
@@ -44,46 +49,21 @@ const StyledPhoto = styled.img`
   height: 21.75rem;
   border-radius: 50%;
   object-fit: cover;
+
   position: absolute;
 `
 
 const Abstract = styled.div`
   width: 628px;
   height: 628px;
-  position: relative;
   top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+
+  position: relative;
 `
-
-const Rectangle = styled.div`
-  width: 444px;
-  height: 444px;
-  border: 1px solid yellow;
-  transform: rotate(135.00deg);
-  
-  position: absolute;
-
-  &::before {
-    content: "";
-    width: 444px;
-    height: 444px;
-    border: 1px solid yellow;
-    transform: rotate(150.00deg);
-    position: absolute;
-  }
-
-  &::after {
-    content: "";
-    width: 444px;
-    height: 444px;
-    border: 1px solid yellow;
-    transform: rotate(165.00deg);
-    position: absolute;
-  }
-`
-
 
 const StyledMainTitle = styled.h1`
   font-size: 40px;

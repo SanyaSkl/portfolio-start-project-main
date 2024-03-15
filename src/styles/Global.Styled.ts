@@ -34,6 +34,10 @@ export const GlobalStyled = createGlobalStyle `
   }
   
   section {
+    padding: 100px 0;
+  }
+  
+  section {
     background-color: ${theme.colors.primaryBg};
   }
   

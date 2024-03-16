@@ -10,38 +10,41 @@ import img3 from "../../../assets/images/img3.webp"
 import img4 from "../../../assets/images/img4.webp"
 import img5 from "../../../assets/images/img5.webp"
 import img6 from "../../../assets/images/img6.webp"
+import {Container} from "../../../components/Container";
 
 export const Works = () => {
     return (
         <StyledWorks>
-            <SectionTitle>Projects</SectionTitle>
-            <StyledSpan>Things I’ve built so far</StyledSpan>
-            <FlexWrapper wrap={"wrap"} justify={"center"}>
-                <Work src={img1}
-                      title={"Project Tile goes here"}
-                      text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                      techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
-                <Work src={img2}
-                      title={"Project Tile goes here"}
-                      text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                      techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
-                <Work src={img3}
-                      title={"Project Tile goes here"}
-                      text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                      techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
-                <Work src={img4}
-                      title={"Project Tile goes here"}
-                      text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                      techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
-                <Work src={img5}
-                      title={"Project Tile goes here"}
-                      text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                      techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
-                <Work src={img6}
-                      title={"Project Tile goes here"}
-                      text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
-                      techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
-            </FlexWrapper>
+            <Container>
+                <SectionTitle>Projects</SectionTitle>
+                <StyledSpan>Things I’ve built so far</StyledSpan>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                    <Work src={img1}
+                          title={"Project Tile goes here"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
+                    <Work src={img2}
+                          title={"Project Tile goes here"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
+                    <Work src={img3}
+                          title={"Project Tile goes here"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
+                    <Work src={img4}
+                          title={"Project Tile goes here"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
+                    <Work src={img5}
+                          title={"Project Tile goes here"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
+                    <Work src={img6}
+                          title={"Project Tile goes here"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
+                </FlexWrapper>
+            </Container>
         </StyledWorks>
     );
 };

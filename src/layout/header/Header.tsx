@@ -5,7 +5,7 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {SocialNetworks} from "../../components/socialLink/SocialNetworks";
 import {theme} from "../../styles/Theme";
-import {HeaderMenu} from "./headerMenu/HeaderMenu";
+import {Menu} from "../../components/menu/Menu";
 
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
@@ -16,7 +16,7 @@ export const Header = () => {
             <Container>
                 <FlexWrapper align={"center"}>
                     <Logo/>
-                    <HeaderMenu menuItems={items} />
+                    <Menu menuItems={items} />
                     <SocialNetworks/>
                 </FlexWrapper>
             </Container>

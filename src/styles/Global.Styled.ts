@@ -42,11 +42,17 @@ export const GlobalStyled = createGlobalStyle `
   }
   
   h1 {
-    color: #D9D9D9;
+    color: ${theme.colors.H1};
   }
   
   h2, h3, span, p {
-    color: #CCCCCC;
+    color: ${theme.colors.H2};
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
   }
   
 `

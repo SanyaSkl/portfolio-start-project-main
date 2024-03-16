@@ -7,9 +7,9 @@ export const Menu = (props: { menuItems: Array<string> }) => {
         <StyledMenu>
             <ul>
                 {props.menuItems.map((item, index) => {
-                    return <li key={index}>
-                        <a href="#">{item}</a>
-                    </li>
+                    return <ListItem key={index}>
+                        <Link href="#">{item}</Link>
+                    </ListItem>
                 })}
             </ul>
         </StyledMenu>
@@ -17,15 +17,29 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 };
 
 const StyledMenu = styled.nav`
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px;
+
   ul {
     display: flex;
-    margin-left: auto;
-    gap: 30px
+    gap: 50px;
   }
 
   a {
-    text-decoration: none;
     color: #A7A7A7;
   }
+`
 
+const ListItem = styled.li`
+
+`
+
+const Link = styled.a`
+  color: rgb(167, 167, 167);
+  font-family: DM Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-align: center;
 `

@@ -24,13 +24,9 @@ export const Skill = (props: SkillIconPropsType) => {
 
 const StyledSkill = styled.div`
   width: 22%;
-
 `
 
 const SkillTitle = styled.h3`
   margin: 30px 0 25px;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1px;
   text-transform: uppercase;
 `

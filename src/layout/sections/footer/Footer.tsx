@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Logo} from "../../../components/logo/Logo";
 import {StyledSpan} from "../../../components/StyledSpan";
 import {Menu} from "../../../components/menu/Menu";
-import {SocialNetworks} from "../../../components/socialLink/SocialNetworks";
+import {LinkSocial} from "../../../components/linkSocial/LinkSocial";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
 
@@ -16,7 +16,7 @@ export const Footer = () => {
                 <Logo/>
                 <StyledSpan>+91 12345 09876</StyledSpan>
                 <StyledSpan>+sanyaskl2012@gmail.com</StyledSpan>
-                <SocialNetworks/>
+                <LinkSocial/>
                 <Menu menuItems={items}/>
                 <Copyright>Designed and built by Sklyarenko AA with IT-incubator</Copyright>
             </FlexWrapper>

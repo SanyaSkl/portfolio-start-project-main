@@ -55,4 +55,8 @@ export const GlobalStyled = createGlobalStyle `
     letter-spacing: 0;
   }
   
+  p {
+    line-height: 1.4;
+  }
+  
 `

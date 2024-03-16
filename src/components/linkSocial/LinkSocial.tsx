@@ -3,7 +3,7 @@ import {Icon} from "../icon/Icon";
 import styled from "styled-components";
 
 
-export const SocialNetworks = () => {
+export const LinkSocial = () => {
     return (
         <SocialList>
             <SocialItem>

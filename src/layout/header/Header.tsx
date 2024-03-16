@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {SocialNetworks} from "../../components/socialLink/SocialNetworks";
+import {LinkSocial} from "../../components/linkSocial/LinkSocial";
 import {theme} from "../../styles/Theme";
 import {Menu} from "../../components/menu/Menu";
 
@@ -17,7 +17,7 @@ export const Header = () => {
                 <FlexWrapper align={"center"}>
                     <Logo/>
                     <Menu menuItems={items} />
-                    <SocialNetworks/>
+                    <LinkSocial/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>

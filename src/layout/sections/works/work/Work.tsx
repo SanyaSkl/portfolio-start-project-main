@@ -13,7 +13,9 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
-            <Image src={props.src} alt=""/>
+            <ImageWrapper>
+                <Image src={props.src} alt=""/>
+            </ImageWrapper>
             <Description>
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
@@ -29,19 +31,6 @@ export const Work = (props: WorkPropsType) => {
     );
 };
 
-const Link = styled.a`
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  text-align: left;
-  color: ${theme.colors.link};
-  text-decoration-line: underline;
-  display: inline-block;
-`
-
-const LinkBlock = styled.div`
-  
-`
 
 const StyledWork = styled.div`
   max-width: 373px;
@@ -49,14 +38,24 @@ const StyledWork = styled.div`
   border-radius: 20px;
   background: ${theme.colors.secondaryBg};
   margin: 17px;
+`
 
-  ${Link} {
-    padding: 10px 0;
+const ImageWrapper = styled.div`
+  position: relative;
 
-    & + ${Link} {
-      margin-left: 50px;
+  &:hover {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0, 3);
+      backdrop-filter: blur(6px);
     }
   }
+
 `
 
 const Image = styled.img`
@@ -75,7 +74,6 @@ const Title = styled.h3`
   font-weight: 500;
   letter-spacing: 0;
   text-align: center;
-
 `
 
 const Text = styled.p`
@@ -93,6 +91,28 @@ const TechStack = styled.span`
   letter-spacing: 0;
   text-align: left;
   display: inline-block;
+`
+
+const LinkBlock = styled.div`
+
+`
+
+const Link = styled.a`
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: left;
+  color: ${theme.colors.link};
+  text-decoration-line: underline;
+  display: inline-block;
+  padding: 10px 10px;
+  
+  &:hover {
+    cursor: pointer;
+    background-image: linear-gradient(#13B0F5, #E70FAA);
+    color: transparent;
+    -webkit-background-clip: text
+  }
 `
 
 

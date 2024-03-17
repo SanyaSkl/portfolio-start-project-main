@@ -7,6 +7,6 @@ export const theme = {
         H2: "#CCCCCC",
         subheadings: "#A7A7A7",
         menu: "#A7A7A7",
-        link: "#FFFFFF"
+        link: "#FFFFFF",
     }
 }

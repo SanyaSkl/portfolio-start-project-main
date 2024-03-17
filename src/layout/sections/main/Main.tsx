@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../../components/AbstractRectangle";
+import {StyledAccent} from "../../../components/StyledAccent";
 
 export const Main = () => {
     return (
@@ -13,7 +14,7 @@ export const Main = () => {
                     <StyledTitle>
                         <StyledSpanTitle>Hi 👋,</StyledSpanTitle>
                         <StyledSpanTitle> My name is </StyledSpanTitle>
-                        <StyledName>Sklyarenko AA</StyledName>
+                        <StyledAccent>Sklyarenko AA</StyledAccent>
                         <StyledMainTitle>I Frontend Developer</StyledMainTitle>
                     </StyledTitle>
                     <Abstract>
@@ -40,6 +41,13 @@ const StyledTitle = styled.section`
   font-weight: 700;
   letter-spacing: -1px;
   text-align: left;
+
+  ${StyledAccent} {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: left;
+  }
 `
 
 const StyledPhoto = styled.img`
@@ -60,7 +68,7 @@ const Abstract = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   position: relative;
 `
 
@@ -69,16 +77,6 @@ const StyledMainTitle = styled.h1`
   font-weight: 700;
   text-align: left;
   letter-spacing: -1px;
-`
-
-const StyledName = styled.h2`
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: -1px;
-  text-align: left;
-  background-image: linear-gradient(#13B0F5, #E70FAA);
-  color: transparent;
-  -webkit-background-clip: text
 `
 
 

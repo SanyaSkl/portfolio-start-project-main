@@ -8,5 +8,6 @@ export const theme = {
         subheadings: "#A7A7A7",
         menu: "#A7A7A7",
         link: "#FFFFFF",
+        button: "#FFFFFF"
     }
 }

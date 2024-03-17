@@ -7,17 +7,17 @@ export const LinkSocial = () => {
     return (
         <SocialList>
             <SocialItem>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon height={"32px"} width={"32px"} viewBox={"0 0 32px 32px"} iconId={"socialIconGit"}/>
                 </SocialLink>
             </SocialItem>
             <SocialItem>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon height={"32px"} width={"32px"} viewBox={"0 0 32px 32px"} iconId={"socialIconTwitter"}/>
                 </SocialLink>
             </SocialItem>
             <SocialItem>
-                <SocialLink>
+                <SocialLink href={"#"}>
                     <Icon height={"32px"} width={"32px"} viewBox={"0 0 32px 32px"} iconId={"socialIconLinkedIn"}/>
                 </SocialLink>
             </SocialItem>

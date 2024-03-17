@@ -31,6 +31,8 @@ export const GlobalStyled = createGlobalStyle `
   button {
     background-color: unset;
     border: none;
+    color: ${theme.colors.button};
+    cursor: pointer;
   }
   
   section {

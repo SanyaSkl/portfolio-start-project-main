@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {Icon} from "../../../../components/icon/Icon";
+import {Button} from "../../../../components/button/Button";
 
 type WorkPropsType = {
     title: string
@@ -15,6 +16,7 @@ export const Work = (props: WorkPropsType) => {
         <StyledWork>
             <ImageWrapper>
                 <Image src={props.src} alt=""/>
+                <Button>VIEW PROJECT</Button>
             </ImageWrapper>
             <Description>
                 <Title>{props.title}</Title>
@@ -34,7 +36,7 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.div`
   max-width: 373px;
-  height: 567px;
+  height: auto;
   border-radius: 20px;
   background: ${theme.colors.secondaryBg};
   margin: 17px;
@@ -51,11 +53,21 @@ const ImageWrapper = styled.div`
       right: 0;
       top: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0, 3);
+      background: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(6px);
     }
+    ${Button}{
+      opacity: 1;
+    }
   }
-
+  
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
 `
 
 const Image = styled.img`
@@ -67,6 +79,7 @@ const Image = styled.img`
 
 const Description = styled.div`
   padding: 27px 28px;
+  
 `
 
 const Title = styled.h3`
@@ -106,9 +119,8 @@ const Link = styled.a`
   text-decoration-line: underline;
   display: inline-block;
   padding: 10px 10px;
-  
+
   &:hover {
-    cursor: pointer;
     background-image: linear-gradient(#13B0F5, #E70FAA);
     color: transparent;
     -webkit-background-clip: text

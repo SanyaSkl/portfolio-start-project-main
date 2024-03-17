@@ -14,7 +14,7 @@ export const Main = () => {
                     <StyledTitle>
                         <StyledSpanTitle>Hi 👋,</StyledSpanTitle>
                         <StyledSpanTitle> My name is </StyledSpanTitle>
-                        <StyledAccent>Sklyarenko AA</StyledAccent>
+                        <StyledAccent >Sklyarenko AA</StyledAccent>
                         <StyledMainTitle>I Frontend Developer</StyledMainTitle>
                     </StyledTitle>
                     <Abstract>
@@ -30,7 +30,6 @@ export const Main = () => {
         </StyledMain>
     );
 };
-
 
 const StyledMain = styled.section`
   min-height: 100vh;
@@ -56,7 +55,7 @@ const StyledPhoto = styled.img`
   width: 21.75rem;
   height: 21.75rem;
   border-radius: 50%;
-  object-fit: cover;
+  //object-fit: cover;
 
   position: absolute;
 `

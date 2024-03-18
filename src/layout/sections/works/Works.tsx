@@ -21,7 +21,7 @@ export const Works = () => {
                 <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"flex-start"}>
                     <Work src={img1}
                           title={"Project Tile goes here"}
-                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
+                          text={"This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"}
                           techStack={"Tech stack : HTML , JavaScript, SASS, React"}/>
                     <Work src={img2}
                           title={"Project Tile goes here"}

@@ -55,7 +55,8 @@ const StyledPhoto = styled.img`
   width: 21.75rem;
   height: 21.75rem;
   border-radius: 50%;
-  //object-fit: cover;
+  object-fit: cover;
+  object-position: bottom -50%;
 
   position: absolute;
 `

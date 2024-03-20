@@ -3,17 +3,19 @@ import logo from "../../assets/images/front-end-logo.png";
 import styled from "styled-components";
 
 
-
 export const Logo = () => {
     return (
-
-        <a href="#">
+        <LinkLogo href="#">
             <StyledLogo src={logo} alt='logo'/>
-        </a>
+        </LinkLogo>
     );
 };
 
-export const StyledLogo = styled.img `
+const LinkLogo = styled.a`
+
+`
+
+export const StyledLogo = styled.img`
   width: 59px;
   height: 59px;
 `

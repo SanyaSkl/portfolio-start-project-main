@@ -14,7 +14,7 @@ export const Main = () => {
                     <StyledTitle>
                         <StyledSpanTitle>Hi 👋,</StyledSpanTitle>
                         <StyledSpanTitle> My name is </StyledSpanTitle>
-                        <StyledAccent >Sklyarenko AA</StyledAccent>
+                        <StyledAccent>Sklyarenko AA</StyledAccent>
                         <StyledMainTitle>I Frontend Developer</StyledMainTitle>
                     </StyledTitle>
                     <Abstract>
@@ -34,6 +34,7 @@ export const Main = () => {
 const StyledMain = styled.section`
   min-height: 100%;
   display: flex;
+
 `
 
 const StyledTitle = styled.section`
@@ -56,7 +57,6 @@ const StyledPhoto = styled.img`
   height: 21.75rem;
   border-radius: 50%;
   object-fit: cover;
-  object-position: bottom -50%;
 
   position: absolute;
 `
@@ -64,7 +64,6 @@ const StyledPhoto = styled.img`
 const Abstract = styled.div`
   width: 628px;
   height: 628px;
-  top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;

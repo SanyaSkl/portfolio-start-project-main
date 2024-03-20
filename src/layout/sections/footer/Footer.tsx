@@ -6,6 +6,7 @@ import {LinkSocial} from "../../../components/linkSocial/LinkSocial";
 import {theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Accent} from "../../../components/Accent";
 
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
@@ -22,7 +23,10 @@ export const Footer = () => {
                 </FlexWrapper>
                 <MenuWrapper>
                     <Menu menuItems={items}/>
-                    <Copyright>Designed and built by Sklyarenko AA with IT-incubator</Copyright>
+                    <Copyright>Designed and built by
+                        <Accent>Sklyarenko AA</Accent> with
+                        <Accent>IT-incubator</Accent>
+                    </Copyright>
                 </MenuWrapper>
             </Container>
         </StyledFooter>
@@ -31,15 +35,15 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
   background-color: ${theme.colors.primaryBg};
-  color: white;
+  color: ${theme.colors.menu};
   position: relative;
   height: 178px;
- 
-  ${FlexWrapper}{
-        padding: 20px 10px ;
+
+  ${FlexWrapper} {
+    padding: 20px 10px;
   }
-  
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     border: 2px solid rgb(66, 68, 110);
@@ -54,7 +58,7 @@ const TelNumber = styled.div`
   font-size: 18px;
   font-weight: 400;
   padding: 0 50px 0 550px;
-  
+
 `
 
 const Mail = styled.div`
@@ -65,17 +69,23 @@ const Mail = styled.div`
 `
 
 const MenuWrapper = styled.div`
-    flex-direction: row;
-text-align: center;
+  flex-direction: row;
+  text-align: center;
 `
 
 const Copyright = styled.small`
   font-size: 18px;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0;
-  text-align: center;
-  display: inline-block;
+
+
   padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+
+  ${Accent} {
+    font-size: 18px;
+  }
 `
 

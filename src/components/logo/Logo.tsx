@@ -18,4 +18,5 @@ const LinkLogo = styled.a`
 export const StyledLogo = styled.img`
   width: 59px;
   height: 59px;
+  
 `

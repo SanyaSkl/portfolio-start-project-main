@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../../components/AbstractRectangle";
-import {StyledAccent} from "../../../components/StyledAccent";
+import {Accent} from "../../../components/Accent";
 
 export const Main = () => {
     return (
@@ -14,7 +14,7 @@ export const Main = () => {
                     <StyledTitle>
                         <StyledSpanTitle>Hi 👋,</StyledSpanTitle>
                         <StyledSpanTitle> My name is </StyledSpanTitle>
-                        <StyledAccent>Sklyarenko AA</StyledAccent>
+                        <Accent>Sklyarenko AA</Accent>
                         <StyledMainTitle>I Frontend Developer</StyledMainTitle>
                     </StyledTitle>
                     <Abstract>
@@ -42,7 +42,7 @@ const StyledTitle = styled.section`
   letter-spacing: -1px;
   text-align: left;
 
-  ${StyledAccent} {
+  ${Accent} {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: -1px;

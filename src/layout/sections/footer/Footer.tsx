@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper wrap={"wrap"} justify={"spase-between"}>
+                <FlexWrapper wrap={"wrap"} justify={"spase-between"} align={"center"}>
                     <Logo/>
                     <TelNumber>+91 12345 09876</TelNumber>
                     <Mail>sanyaskl2012@gmail.com</Mail>
@@ -36,8 +36,7 @@ const StyledFooter = styled.footer`
   height: 178px;
  
   ${FlexWrapper}{
-    align-items: center;
-    padding: 20px 10px ;
+        padding: 20px 10px ;
   }
   
   &::before{

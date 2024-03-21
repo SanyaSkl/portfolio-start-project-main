@@ -25,12 +25,6 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 const StyledMobileMenu = styled.nav`
   display: none;
   
-/*  display: flex;
-  margin-left: auto;
-  justify-content: center;
-  padding-left: 50px;*/
-
-
   @media ${theme.media.tablet} {
     display: block;
   }

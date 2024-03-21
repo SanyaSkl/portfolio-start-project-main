@@ -8,7 +8,8 @@ export const theme = {
         subheadings: "#A7A7A7",
         menu: "#A7A7A7",
         link: "#FFFFFF",
-        button: "#FFFFFF"
+        button: "#FFFFFF",
+        accent: "#13B0F5"
     },
 
     media: {

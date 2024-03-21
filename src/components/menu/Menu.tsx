@@ -43,9 +43,13 @@ const ListItem = styled.li`
 `
 
 const Link = styled.a`
-  color: rgb(167, 167, 167);
+  color: ${theme.colors.menu};
   font-family: DM Sans, sans-serif;
   font-size: 20px;
   letter-spacing: 0;
   text-align: center;
+  
+  &:hover{
+    color: ${theme.colors.accent};
+  }
 `

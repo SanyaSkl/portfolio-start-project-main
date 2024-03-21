@@ -42,16 +42,21 @@ const StyledFooter = styled.footer`
 
   ${FlexWrapper} {
     padding: 20px 10px;
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    border: 2px solid rgb(66, 68, 110);
-    top: 20px;
-    opacity: 0.3;
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: ${theme.colors.accent};
+      width: 1220px;
+      height: 6px;
+      opacity: 0.3;
+      position: absolute;
+      bottom: 50%;
+      border: 2px solid rgb(66, 68, 110);
 
+    }
   }
+  
 `
 
 const TelNumber = styled.div`
@@ -77,8 +82,6 @@ const MenuWrapper = styled.div`
 const Copyright = styled.small`
   font-size: 18px;
   font-weight: 400;
-
-
   padding-top: 15px;
   display: flex;
   flex-direction: row;

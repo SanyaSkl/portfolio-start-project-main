@@ -9,5 +9,10 @@ export const theme = {
         menu: "#A7A7A7",
         link: "#FFFFFF",
         button: "#FFFFFF"
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 }

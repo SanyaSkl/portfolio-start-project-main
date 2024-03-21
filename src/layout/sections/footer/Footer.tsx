@@ -24,7 +24,8 @@ export const Footer = () => {
                 <MenuWrapper>
                     <Menu menuItems={items}/>
                     <Copyright>Designed and built by
-                        <Accent>Sklyarenko AA</Accent> with
+                        <Accent>Sklyarenko AA</Accent>
+                        together with
                         <Accent>IT-incubator</Accent>
                     </Copyright>
                 </MenuWrapper>

@@ -32,6 +32,10 @@ const StyledMenu = styled.nav`
   a {
     color: ${theme.colors.menu};
   }
+  
+  @media ${theme.media.tablet} {
+    display: none;
+  }
 `
 
 const ListItem = styled.li`

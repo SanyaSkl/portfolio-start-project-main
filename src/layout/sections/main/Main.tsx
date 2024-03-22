@@ -5,25 +5,27 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../../components/AbstractRectangle";
 import {Accent} from "../../../components/Accent";
+import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"}>
-                    <StyledTitle>
-                        <StyledSpanTitle>Hi 👋,</StyledSpanTitle>
-                        <StyledSpanTitle> My name is </StyledSpanTitle>
-                        <Accent>Sklyarenko AA</Accent>
-                        <StyledMainTitle>I Frontend Developer</StyledMainTitle>
-                    </StyledTitle>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
+                    <div>
+                        <SpanTitle>Hi 👋,</SpanTitle>
+                        <SpanTitle> My name is </SpanTitle>
+                        <Name><Accent>Sklyarenko AA</Accent></Name>
+                        <MainTitle>I Frontend Developer</MainTitle>
+                    </div>
                     <Abstract>
                         <Rectangle1/>
                         <Rectangle2/>
                         <Rectangle3/>
                         <Rectangle4/>
                         <Rectangle5/>
-                        <StyledPhoto src={photo}/>
+                        <Photo src={photo}/>
                     </Abstract>
                 </FlexWrapper>
             </Container>
@@ -37,28 +39,26 @@ const StyledMain = styled.section`
 
 `
 
-const StyledTitle = styled.section`
+/*const StyledTitle = styled.section`
   font-weight: 700;
   letter-spacing: -1px;
   text-align: left;
 
-  ${Accent} {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    text-align: left;
-  }
-`
 
-const StyledPhoto = styled.img`
+`*/
+
+const Photo = styled.img`
   background-image: linear-gradient(to bottom right, #e70faa, #00c0fd);
   padding: 9px;
-  width: 21.75rem;
-  height: 21.75rem;
+  width: 349px;
+  height: 349px;
   border-radius: 50%;
   object-fit: cover;
 
-  position: absolute;
+  @media ${theme.media.mobile} {
+    width: 300px;
+    height: 300px;
+  }
 `
 
 const Abstract = styled.div`
@@ -71,20 +71,26 @@ const Abstract = styled.div`
   position: relative;
 `
 
-const StyledMainTitle = styled.h1`
-  font-size: 40px;
+const MainTitle = styled.h1`
+  font-size: 58px;
   font-weight: 700;
   text-align: left;
   letter-spacing: -1px;
 `
 
 
-const StyledSpanTitle = styled.span`
+const SpanTitle = styled.span`
+  color: ${theme.colors.h1};
   display: flex;
   justify-content: flex-start;
-  font-size: 40px;
+  font-size: 58px;
   font-weight: 700;
-  line-height: 70px;
   letter-spacing: -1px;
   text-align: left;
 `
+const Name = styled.h2`
+  ${font({weight: 700, Fmax: 58, Fmin: 36})}
+  letter-spacing: -1px;
+  text-align: left;
+`
+

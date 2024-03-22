@@ -52,11 +52,11 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   h1 {
-    color: ${theme.colors.H1};
+    color: ${theme.colors.h1};
   }
 
   h2, h3, span, p {
-    color: ${theme.colors.H2};
+    color: ${theme.colors.h2};
   }
 
   h3 {

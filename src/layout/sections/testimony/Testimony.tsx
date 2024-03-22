@@ -11,23 +11,21 @@ export const Testimony = () => {
         <StyledTestimony>
             <FlexWrapper justify={"center"} direction={"column"}>
                 <SectionTitle>For any questions please mail me:</SectionTitle>
-                <Accent>
-                    sanyaskl2012@gmail.com
-                </Accent>
+                <Mail><Accent>sanyaskl2012@gmail.com</Accent></Mail>
             </FlexWrapper>
         </StyledTestimony>
     );
 };
 
 const StyledTestimony = styled.section`
-padding-top: 100px;
+  padding-top: 100px;
 
+`
 
-  ${Accent} {
-    text-align: center;
-    font-family: DM Sans, sans-serif;
-    font-size: 58px;
-    font-weight: 700;
-    letter-spacing: -1px;
-  }
+const Mail = styled.span`
+  text-align: center;
+  font-family: DM Sans, sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -1px;
 `

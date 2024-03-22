@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 export const StyledSpan = styled.span`
+  color: ${theme.colors.span};
   display: flex;
   justify-content: center;
   flex-direction: column;

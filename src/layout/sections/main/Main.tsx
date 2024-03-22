@@ -12,13 +12,13 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
-                    <div>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
+                    <StyledTitle>
                         <SpanTitle>Hi 👋,</SpanTitle>
                         <SpanTitle> My name is </SpanTitle>
                         <Name><Accent>Sklyarenko AA</Accent></Name>
                         <MainTitle>I Frontend Developer</MainTitle>
-                    </div>
+                    </StyledTitle>
                     <Abstract>
                         <Rectangle1/>
                         <Rectangle2/>
@@ -39,25 +39,23 @@ const StyledMain = styled.section`
 
 `
 
-/*const StyledTitle = styled.section`
+const StyledTitle = styled.section`
   font-weight: 700;
   letter-spacing: -1px;
   text-align: left;
-
-
-`*/
+`
 
 const Photo = styled.img`
   background-image: linear-gradient(to bottom right, #e70faa, #00c0fd);
   padding: 9px;
-  width: 349px;
-  height: 349px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
 
   @media ${theme.media.mobile} {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 `
 
@@ -69,27 +67,37 @@ const Abstract = styled.div`
   align-items: center;
 
   position: relative;
+
+  @media ${theme.media.mobile} {
+    margin-top: -150px;
+    
+  }
+
+  @media ${theme.media.tablet} {
+
+    margin-top: -150px;
+    
+  }
+
 `
 
 const MainTitle = styled.h1`
-  font-size: 58px;
-  font-weight: 700;
+  ${font({weight: 700, Fmax: 58, Fmin: 32})}
   text-align: left;
   letter-spacing: -1px;
+  white-space: nowrap;
 `
-
 
 const SpanTitle = styled.span`
   color: ${theme.colors.h1};
+  ${font({weight: 700, Fmax: 58, Fmin: 32})}
   display: flex;
   justify-content: flex-start;
-  font-size: 58px;
-  font-weight: 700;
   letter-spacing: -1px;
   text-align: left;
 `
 const Name = styled.h2`
-  ${font({weight: 700, Fmax: 58, Fmin: 36})}
+  ${font({weight: 700, Fmax: 58, Fmin: 32})}
   letter-spacing: -1px;
   text-align: left;
 `

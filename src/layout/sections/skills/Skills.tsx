@@ -21,7 +21,6 @@ export const Skills = () => {
                     <Skill width={"105"} height={"120"} viewBox={"0 0 105 120"} iconId={"git"} title={"git"}/>
                     <Skill iconId={"html"} title={"html5"}/>
                     <Skill iconId={"typescript"} title={"typescript"}/>
-
                     <Skill iconId={"styledComponent"} title={"styled component"}/>
                     <Skill width={"88"} height={"120"} viewBox={"0 0 88 120"} iconId={"github"} title={"github"}/>
                 </FlexWrapper>

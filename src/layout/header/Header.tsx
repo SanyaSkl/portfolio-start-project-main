@@ -5,8 +5,8 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {LinkSocial} from "../../components/linkSocial/LinkSocial";
 import {theme} from "../../styles/Theme";
-import {Menu} from "../../components/menu/Menu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
+import {Menu} from "../../components/menu/Menu";
 
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]

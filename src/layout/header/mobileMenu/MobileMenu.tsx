@@ -72,7 +72,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     height: 2px;
     background-color: ${theme.colors.menu};
     position: absolute;
-    left: 40px;
+    left: 340px;
     bottom: 50px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -114,7 +114,7 @@ const ListItem = styled.li`
 `
 
 const Link = styled.a`
-  color: rgb(167, 167, 167);
+  color: ${theme.colors.menu};
   font-family: DM Sans, sans-serif;
   font-size: 20px;
   letter-spacing: 0;

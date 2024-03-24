@@ -7,6 +7,7 @@ import {theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Accent} from "../../../components/Accent";
+import {font} from "../../../styles/Common";
 
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
@@ -15,7 +16,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <FlexWrapper wrap={"wrap"} justify={"spase-between"} align={"center"}>
+                <FlexWrapper wrap={"wrap"} align={"center"} justify={"space-between"}>
                     <Logo/>
                     <TelNumber>+91 12345 09876</TelNumber>
                     <Mail>sanyaskl2012@gmail.com</Mail>
@@ -38,50 +39,59 @@ const StyledFooter = styled.footer`
   background-color: ${theme.colors.primaryBg};
   color: ${theme.colors.menu};
   position: relative;
-  height: 178px;
+  //height: 178px;
 
   ${FlexWrapper} {
-    padding: 20px 10px;
+    padding: 20px;
+    //width: 100%;
 
-    &::before {
-      content: "";
-      display: inline-block;
-      background-color: ${theme.colors.accent};
-      width: 1220px;
-      height: 6px;
-      opacity: 0.3;
-      position: absolute;
-      bottom: 50%;
-      border: 2px solid rgb(66, 68, 110);
-
+    // &::before {
+    //   content: "";
+    //   display: inline-block;
+      //   background-color: ${theme.colors.accent};
+    //   width: 100%;
+    //   height: 6px;
+    //   opacity: 0.3;
+    //   position: absolute;
+    //   bottom: 50%;
+    //   border: 2px solid rgb(66, 68, 110);
+    //
+    // }
+    @media ${theme.media.tablet} {
+      display: flex;
+      flex-direction: row;
     }
   }
-  
+
 `
 
 const TelNumber = styled.div`
-  font-family: DM Sans, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  ${font({family: "DM Sans, sans-serif", weight: 400, Fmax: 18, Fmin: 14})}
   padding: 0 50px 0 550px;
 
+  @media ${theme.media.tablet} {
+padding: 0;
+  }
 `
 
 const Mail = styled.div`
-  font-family: DM Sans, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  ${font({family: "DM Sans, sans-serif", weight: 400, Fmax: 18, Fmin: 14})}
   padding-right: 50px;
 `
 
 const MenuWrapper = styled.div`
   flex-direction: row;
   text-align: center;
+
+  @media ${theme.media.tablet} {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
 `
 
 const Copyright = styled.small`
-  font-size: 18px;
-  font-weight: 400;
+  ${font({weight: 400, Fmax: 18, Fmin: 14})}
   padding-top: 15px;
   display: flex;
   flex-direction: row;

@@ -23,7 +23,7 @@ export const Work = (props: WorkPropsType) => {
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
                 <TechStack>{props.techStack}</TechStack>
-                <FlexWrapper align={"center"} direction={"column"}>
+                <FlexWrapper align={"center"} direction={"row"}>
                     <Icon iconId={"linkIcon"} width={"20"} height={"20"} viewBox={"0 0 20 20"}/>
                     <Link href={"#"}>Live Preview</Link>
                     <Icon iconId={"githubIcon"} width={"20"} height={"20"} viewBox={"0 0 20 20"}/>
@@ -81,6 +81,12 @@ const Image = styled.img`
 const Description = styled.div`
   padding: 27px 28px;
   
+  ${FlexWrapper}{
+  @media ${theme.media.mobile} {
+    display: flex;
+    flex-direction: column;
+  }
+}
 `
 
 const Title = styled.h3`
@@ -105,6 +111,7 @@ const TechStack = styled.span`
   letter-spacing: 0;
   text-align: left;
   display: inline-block;
+  padding-bottom: 10px;
 `
 
 const Link = styled.a`

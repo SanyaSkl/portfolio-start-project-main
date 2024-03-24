@@ -6,10 +6,10 @@ import {theme} from "../../../styles/Theme";
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                 <ul>
                     {props.menuItems.map((item, index) => {
                         return <ListItem key={index}>
@@ -25,8 +25,8 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 const StyledMobileMenu = styled.nav`
   display: none;
   
-  //@media ${theme.media.tablet} {
-    //display: block;
+  @media ${theme.media.tablet} {
+    display: block;
   }
 `
 
@@ -62,7 +62,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
   top: -100px;
   right: 5px;
-  width: 200px;
+  width: 100px;
   height: 200px;
   z-index: 9999999;
 

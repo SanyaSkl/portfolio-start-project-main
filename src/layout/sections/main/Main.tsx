@@ -37,12 +37,17 @@ const StyledMain = styled.section`
   min-height: 100%;
   display: flex;
 
+  @media ${theme.media.tablet} {
+    padding-top: 40px;
+
+  }
 `
 
 const StyledTitle = styled.section`
   font-weight: 700;
   letter-spacing: -1px;
   text-align: left;
+  
 `
 
 const Photo = styled.img`

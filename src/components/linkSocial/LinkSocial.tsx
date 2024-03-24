@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from "../icon/Icon";
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 
 export const LinkSocial = () => {
@@ -28,6 +29,7 @@ export const LinkSocial = () => {
 const SocialList = styled.ul`
   display: flex;
   gap: 10px;
+  }
 `
 
 const SocialItem = styled.li`

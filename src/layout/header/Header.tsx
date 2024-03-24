@@ -17,8 +17,8 @@ export const Header = () => {
             <Container>
                 <FlexWrapper align={"center"}>
                     <Logo/>
-                    <Menu menuItems={items} />
-                    <MobileMenu menuItems={items} />
+                    <Menu menuItems={items}/>
+                    <MobileMenu menuItems={items}/>
                     <LinkSocial/>
                 </FlexWrapper>
             </Container>

@@ -1,11 +1,16 @@
 import styled from "styled-components";
+import {font} from "../styles/Common";
+import {theme} from "../styles/Theme";
 
 export const SectionTitle = styled.h2`
+  ${font({weight: 700, Fmax: 48, Fmin: 32})}
   text-align: center;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0;
   padding-top: 10px;
   padding-bottom: 50px;
+  
+  @media ${theme.media.tablet} {
+    padding-bottom: 20px;
+
+  }
 `

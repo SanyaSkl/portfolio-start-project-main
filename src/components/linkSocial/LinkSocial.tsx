@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 
+
 export const LinkSocial = () => {
     return (
         <SocialList>
@@ -29,6 +30,9 @@ export const LinkSocial = () => {
 const SocialList = styled.ul`
   display: flex;
   gap: 10px;
+  
+  @media ${theme.media.tablet} {
+    padding-left: 20px;
   }
 `
 

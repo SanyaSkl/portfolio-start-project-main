@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {Icon} from "../../../../components/icon/Icon";
 import {Button} from "../../../../components/button/Button";
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 type WorkPropsType = {
     title: string
@@ -22,12 +23,12 @@ export const Work = (props: WorkPropsType) => {
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
                 <TechStack>{props.techStack}</TechStack>
-                <LinkBlock>
+                <FlexWrapper align={"center"} direction={"column"}>
                     <Icon iconId={"linkIcon"} width={"20"} height={"20"} viewBox={"0 0 20 20"}/>
                     <Link href={"#"}>Live Preview</Link>
                     <Icon iconId={"githubIcon"} width={"20"} height={"20"} viewBox={"0 0 20 20"}/>
                     <Link href={"#"}>View Code</Link>
-                </LinkBlock>
+                </FlexWrapper>
             </Description>
         </StyledWork>
     );
@@ -106,10 +107,6 @@ const TechStack = styled.span`
   display: inline-block;
 `
 
-const LinkBlock = styled.div`
-
-`
-
 const Link = styled.a`
   font-size: 16px;
   font-weight: 400;
@@ -125,6 +122,8 @@ const Link = styled.a`
     color: transparent;
     -webkit-background-clip: text
   }
+  
+ 
 `
 
 

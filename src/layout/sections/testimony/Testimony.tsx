@@ -4,6 +4,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 
 import {Accent} from "../../../components/Accent";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {font} from "../../../styles/Common";
 
 
 export const Testimony = () => {
@@ -23,9 +24,7 @@ const StyledTestimony = styled.section`
 `
 
 const Mail = styled.span`
+  ${font({family: "DM Sans, sans-serif", weight: 700, Fmax: 58, Fmin: 28})}
   text-align: center;
-  font-family: DM Sans, sans-serif;
-  font-size: 58px;
-  font-weight: 700;
   letter-spacing: -1px;
 `

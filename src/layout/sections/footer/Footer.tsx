@@ -39,30 +39,32 @@ const StyledFooter = styled.footer`
   background-color: ${theme.colors.primaryBg};
   color: ${theme.colors.menu};
   position: relative;
-  //height: 178px;
+
+  
 
   ${FlexWrapper} {
-    padding: 20px;
-    //width: 100%;
+    padding: 15px;
+    
 
-    // &::before {
-    //   content: "";
-    //   display: inline-block;
-      //   background-color: ${theme.colors.accent};
-    //   width: 100%;
-    //   height: 6px;
-    //   opacity: 0.3;
-    //   position: absolute;
-    //   bottom: 50%;
-    //   border: 2px solid rgb(66, 68, 110);
-    //
-    // }
+    &::before {
+      content: "";
+      display: inline-block;
+        background-color: ${theme.colors.accent};
+      max-width: 1440px;
+      width: 90%;
+      height: 6px;
+      opacity: 0.3;
+      position: absolute;
+      bottom: 35%;
+      border: 2px solid rgb(66, 68, 110);
+
+    }
     @media ${theme.media.tablet} {
       display: flex;
       flex-direction: row;
+      gap: 5px;
     }
   }
-
 `
 
 const TelNumber = styled.div`
@@ -76,7 +78,6 @@ padding: 0;
 
 const Mail = styled.div`
   ${font({family: "DM Sans, sans-serif", weight: 400, Fmax: 18, Fmin: 14})}
-  padding-right: 50px;
 `
 
 const MenuWrapper = styled.div`
@@ -87,7 +88,6 @@ const MenuWrapper = styled.div`
     display: flex;
     flex-direction: row-reverse;
   }
-  
 `
 
 const Copyright = styled.small`

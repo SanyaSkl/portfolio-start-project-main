@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme";
 
 export const Rectangle1 = styled.div`
   width: 444px;
@@ -9,6 +10,11 @@ export const Rectangle1 = styled.div`
   opacity: 10%;
 
   position: absolute;
+
+  @media ${theme.media.mobile} {
+    width: 222px;
+    height: 222px;
+  }
 `
 
 export const Rectangle2 = styled.div`
@@ -20,6 +26,11 @@ export const Rectangle2 = styled.div`
   opacity: 10%;
 
   position: absolute;
+
+  @media ${theme.media.mobile} {
+    width: 222px;
+    height: 222px;
+  }
 `
 
 export const Rectangle3 = styled.div`
@@ -31,6 +42,11 @@ export const Rectangle3 = styled.div`
   opacity: 10%;
 
   position: absolute;
+
+  @media ${theme.media.mobile} {
+    width: 222px;
+    height: 222px;
+  }
 `
 
 export const Rectangle4 = styled.div`
@@ -42,6 +58,11 @@ export const Rectangle4 = styled.div`
   opacity: 10%;
 
   position: absolute;
+
+  @media ${theme.media.mobile} {
+    width: 222px;
+    height: 222px;
+  }
 `
 
 export const Rectangle5 = styled.div`
@@ -53,4 +74,9 @@ export const Rectangle5 = styled.div`
   opacity: 10%;
 
   position: absolute;
+
+  @media ${theme.media.mobile} {
+    width: 222px;
+    height: 222px;
+  }
 `

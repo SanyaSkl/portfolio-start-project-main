@@ -34,6 +34,10 @@ const SocialList = styled.ul`
   @media ${theme.media.tablet} {
     padding-left: 20px;
   }
+
+  @media ${theme.media.mobile} {
+    margin: 0 auto;
+  }
 `
 
 const SocialItem = styled.li`

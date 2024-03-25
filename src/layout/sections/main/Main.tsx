@@ -75,12 +75,14 @@ const Abstract = styled.div`
 
   @media ${theme.media.mobile} {
     margin-top: -150px;
-    
+    width: 428px;
+    height: 428px;
+    margin-bottom: -100px;
   }
 
   @media ${theme.media.tablet} {
 
-    margin-top: -150px;
+    margin-top: -100px;
     
   }
 

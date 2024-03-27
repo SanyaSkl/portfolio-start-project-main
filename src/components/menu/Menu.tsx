@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const Menu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMenu>
             <ul>
@@ -31,10 +31,6 @@ const StyledMenu = styled.nav`
 
   a {
     color: ${theme.colors.menu};
-  }
-  
-  @media ${theme.media.tablet} {
-    display: none;
   }
 `
 

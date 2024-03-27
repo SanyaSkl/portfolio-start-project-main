@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../../components/logo/Logo";
-import {Menu} from "../../../components/menu/Menu";
 import {LinkSocial} from "../../../components/linkSocial/LinkSocial";
 import {theme} from "../../../styles/Theme";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Accent} from "../../../components/Accent";
 import {font} from "../../../styles/Common";
+import {Menu} from "../../../components/menu/Menu";
 
 
 const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
@@ -43,7 +43,7 @@ const StyledFooter = styled.footer`
   
 
   ${FlexWrapper} {
-    padding: 15px;
+    padding: 15px 0;
     
 
     &::before {
@@ -52,12 +52,11 @@ const StyledFooter = styled.footer`
         background-color: ${theme.colors.accent};
       max-width: 1440px;
       width: 90%;
-      height: 6px;
+      height: 4px;
       opacity: 0.3;
       position: absolute;
-      bottom: 35%;
+      bottom: 40%;
       border: 2px solid rgb(66, 68, 110);
-
     }
     @media ${theme.media.tablet} {
       display: flex;

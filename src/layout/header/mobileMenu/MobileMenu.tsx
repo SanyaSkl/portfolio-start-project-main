@@ -1,33 +1,24 @@
 import React from 'react';
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
+import {Menu} from "../../../components/menu/Menu";
 
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
         <StyledMobileMenu>
             <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
             <MobileMenuPopup isOpen={false}>
-                <ul>
-                    {props.menuItems.map((item, index) => {
-                        return <ListItem key={index}>
-                            <Link href="src/layout/header/mobileMenu/MobileMenu#">{item}</Link>
-                        </ListItem>
-                    })}
-                </ul>
+                <Menu menuItems={props.menuItems}/>
             </MobileMenuPopup>
         </StyledMobileMenu>
     );
 };
 
 const StyledMobileMenu = styled.nav`
-  display: none;
-  
-  @media ${theme.media.tablet} {
-    display: block;
-  }
+ 
 `
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
@@ -36,8 +27,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(25, 25, 25, 0.9);;
   z-index: 99999;
+  background-color: rgba(25, 25, 25, 0.9);;
   display: none;
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -45,10 +36,11 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     justify-content: center;
     align-items: center;
   `}
+  
   ul {
     display: flex;
     gap: 50px;
-    padding-right: 50px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
   }
@@ -59,9 +51,10 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
+  
   position: fixed;
   top: 0;
-  left: 350px;
+  right: 5px;
   width: 100px;
   height: 100px;
   z-index: 9999999;
@@ -72,12 +65,13 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     height: 2px;
     background-color: ${theme.colors.menu};
     position: absolute;
-    left: 340px;
+    left: 40px;
     bottom: 50px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
       background-color: rgba(255, 255, 255, 0);
     `}
+    
     &::before {
       content: "";
       display: block;
@@ -109,14 +103,10 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `
 
-const ListItem = styled.li`
-
-`
-
-const Link = styled.a`
-  color: ${theme.colors.menu};
-  font-family: DM Sans, sans-serif;
-  font-size: 20px;
-  letter-spacing: 0;
-  text-align: center;
-`
+// const Link = styled.a`
+//   color: ${theme.colors.menu};
+//   font-family: DM Sans, sans-serif;
+//   font-size: 20px;
+//   letter-spacing: 0;
+//   text-align: center;
+// `

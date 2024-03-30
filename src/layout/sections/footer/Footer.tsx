@@ -40,16 +40,15 @@ const StyledFooter = styled.footer`
   color: ${theme.colors.menu};
   position: relative;
 
-  
 
   ${FlexWrapper} {
     padding: 15px 0;
-    
+
 
     &::before {
       content: "";
       display: inline-block;
-        background-color: ${theme.colors.accent};
+      background-color: ${theme.colors.accent};
       max-width: 1440px;
       width: 90%;
       height: 4px;
@@ -57,7 +56,12 @@ const StyledFooter = styled.footer`
       position: absolute;
       bottom: 40%;
       border: 2px solid rgb(66, 68, 110);
+
+      @media ${theme.media.tablet} {
+        display: none;
+      }
     }
+
     @media ${theme.media.tablet} {
       display: flex;
       flex-direction: row;
@@ -71,7 +75,7 @@ const TelNumber = styled.div`
   padding: 0 50px 0 550px;
 
   @media ${theme.media.tablet} {
-padding: 0;
+    padding: 0;
   }
 `
 
@@ -82,10 +86,9 @@ const Mail = styled.div`
 const MenuWrapper = styled.div`
   flex-direction: row;
   text-align: center;
-
+  
   @media ${theme.media.tablet} {
-    display: flex;
-    flex-direction: row-reverse;
+   display: none;
   }
 `
 

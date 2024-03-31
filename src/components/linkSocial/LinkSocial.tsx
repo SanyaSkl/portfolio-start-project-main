@@ -15,7 +15,7 @@ const socialItemsData = [
 
 ]
 
-export const LinkSocial = () => {
+export const LinkSocial: React.FC = () => {
     return (
         <S.SocialList>
             {socialItemsData.map((s, index) => {

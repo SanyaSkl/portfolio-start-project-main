@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
-import {Button} from "../../../../components/button/Button";
+import {Button} from "../../../../components/Button";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
 import {S} from '../Works_Styles';
 

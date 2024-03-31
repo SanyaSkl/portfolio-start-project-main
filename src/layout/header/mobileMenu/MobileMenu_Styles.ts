@@ -12,24 +12,27 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   right: 0;
   bottom: 0;
   z-index: 99999;
-  background-color: rgba(25, 25, 25, 0.9);;
+  background-color: rgba(25, 25, 25, 0.9);
   display: none;
+  
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
+    
     display: flex;
     justify-content: center;
     align-items: center;
   `}
+  
   ul {
     display: flex;
     gap: 50px;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   a {
-    color: ${theme.colors.menu};
+    color: ${theme.colors.accent};
   }
 `
 
@@ -85,14 +88,15 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `
 
+const Link = styled.a`
+  color: ${theme.colors.menu};
+  font-family: DM Sans, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  text-align: center;
+`
+
 export const S = {
-    BurgerButton, MobileMenuPopup, StyledMobileMenu
+    BurgerButton, MobileMenuPopup, StyledMobileMenu, Link
 }
 
-// const Link = styled.a`
-//   color: ${theme.colors.menu};
-//   font-family: DM Sans, sans-serif;
-//   font-size: 20px;
-//   letter-spacing: 0;
-//   text-align: center;
-// `

@@ -3,7 +3,7 @@ import logo from "../../assets/images/front-end-logo.png";
 import styled from "styled-components";
 
 
-export const Logo = () => {
+export const Logo:React.FC = () => {
     return (
         <LinkLogo href="#">
             <StyledLogo src={logo} alt='logo'/>

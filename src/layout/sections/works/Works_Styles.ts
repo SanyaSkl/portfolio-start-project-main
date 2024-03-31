@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
-import {Button} from "../../../components/button/Button";
+import {Button} from "../../../components/Button";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Works = styled.section`

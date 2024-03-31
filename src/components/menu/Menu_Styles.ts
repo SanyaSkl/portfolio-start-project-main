@@ -16,6 +16,10 @@ const StyledMenu = styled.nav`
   a {
     color: ${theme.colors.menu};
   }
+  
+  @media ${theme.media.tablet} {
+    margin-left: 0;
+  }
 `
 
 const MenuItem = styled.li`

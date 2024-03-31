@@ -2,7 +2,7 @@ import React from 'react';
 import {Icon} from "../../../../components/icon/Icon";
 import {Button} from "../../../../components/button/Button";
 import {FlexWrapper} from "../../../../components/FlexWrapper";
-import { S } from '../Works_Styles';
+import {S} from '../Works_Styles';
 
 type WorkPropsType = {
     title: string
@@ -11,9 +11,9 @@ type WorkPropsType = {
     techStack: string
 }
 
-export const Work = (props: WorkPropsType) => {
+export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     return (
-        <S.StyledWork>
+        <S.Work>
             <S.ImageWrapper>
                 <S.Image src={props.src} alt=""/>
                 <Button>VIEW PROJECT</Button>
@@ -29,7 +29,7 @@ export const Work = (props: WorkPropsType) => {
                     <S.Link href={"#"}>View Code</S.Link>
                 </FlexWrapper>
             </S.Description>
-        </S.StyledWork>
+        </S.Work>
     );
 };
 

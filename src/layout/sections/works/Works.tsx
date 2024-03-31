@@ -51,9 +51,9 @@ const workData = [
     }
 ]
 
-export const Works = () => {
+export const Works: React.FC = () => {
     return (
-        <S.StyledWorks>
+        <S.Works>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <StyledSpan>Things I’ve built so far</StyledSpan>
@@ -67,7 +67,7 @@ export const Works = () => {
                     })}
                 </FlexWrapper>
             </Container>
-        </S.StyledWorks>
+        </S.Works>
     );
 };
 

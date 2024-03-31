@@ -3,12 +3,11 @@ import {theme} from "../../../styles/Theme";
 import {Button} from "../../../components/button/Button";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
-const StyledWorks = styled.section`
+const Works = styled.section`
   min-height: 100%;
 `
 
-
-const StyledWork = styled.div`
+const Work = styled.div`
   max-width: 373px;
   height: auto;
   border-radius: 20px;
@@ -126,5 +125,13 @@ const Link = styled.a`
 `
 
 export const S = {
-  Link, TechStack, Text, Title, Description, Image, ImageWrapper, StyledWork, StyledWorks
+    Link,
+    TechStack,
+    Text,
+    Title,
+    Description,
+    Image,
+    ImageWrapper,
+    Work,
+    Works
 }

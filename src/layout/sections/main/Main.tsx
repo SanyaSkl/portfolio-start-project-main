@@ -4,7 +4,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../../components/AbstractRectangle";
 import {Accent} from "../../../components/Accent";
-import { S } from './Main_Styled';
+import {S} from './Main_Styled';
+import Typewriter from 'typewriter-effect'
 
 
 export const Main: React.FC = () => {
@@ -16,7 +17,16 @@ export const Main: React.FC = () => {
                         <S.SpanTitle>Hi 👋,</S.SpanTitle>
                         <S.SpanTitle> My name is </S.SpanTitle>
                         <S.Name><Accent>Sklyarenko AA</Accent></S.Name>
-                        <S.MainTitle>I Frontend Developer</S.MainTitle>
+                        {/*<S.MainTitle>I Frontend Developer</S.MainTitle>*/}
+                        <S.MainTitle>
+                            <Typewriter
+                                options={{
+                                    strings: ['I Frontend Developer'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </S.MainTitle>
                     </S.StyledTitle>
                     <S.Abstract>
                         <Rectangle1/>

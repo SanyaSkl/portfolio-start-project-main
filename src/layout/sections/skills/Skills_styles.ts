@@ -17,7 +17,8 @@ const SkillTitle = styled.h3`
 `
 
 const StyledSkills = styled.section`
-
+  @media ${theme.media.tablet} {
+    padding: 60px 0;
 `
 
 export const S = {

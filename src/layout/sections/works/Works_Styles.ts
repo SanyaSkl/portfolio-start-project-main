@@ -5,6 +5,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Works = styled.section`
   min-height: 100%;
+  @media ${theme.media.tablet} {
+    padding: 60px 0;
 `
 
 const Work = styled.div`

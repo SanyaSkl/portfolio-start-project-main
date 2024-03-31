@@ -5,18 +5,21 @@ import {font} from "../../../styles/Common";
 const StyledMain = styled.section`
   min-height: 100%;
   display: flex;
-
-  @media ${theme.media.tablet} {
-    padding-top: 40px;
-
-  }
 `
 
-const StyledTitle = styled.section`
-  font-weight: 700;
+const StyledTitle = styled.div`
   letter-spacing: -1px;
   text-align: left;
+  font-size: 58px;
+  width: 700px;
 
+  @media ${theme.media.tablet} {
+    padding: 30px 0 40px;
+    width: 50%
+  }
+
+  @media ${theme.media.mobile} {
+    width: 95%;
 `
 
 const Photo = styled.img`
@@ -43,16 +46,13 @@ const Abstract = styled.div`
   position: relative;
 
   @media ${theme.media.mobile} {
-    margin-top: -150px;
-    width: 428px;
-    height: 428px;
-    margin-bottom: -100px;
+    margin: -50px 0;
+    width: 328px;
+    height: 328px;
   }
 
   @media ${theme.media.tablet} {
-
-    margin-top: -100px;
-
+    margin-top: -60px;
   }
 
 `
@@ -79,5 +79,5 @@ const Name = styled.h2`
 `
 
 export const S = {
-  Name, SpanTitle, MainTitle, Abstract, Photo, StyledTitle, StyledMain
+    Name, SpanTitle, MainTitle, Abstract, Photo, StyledTitle, StyledMain
 }

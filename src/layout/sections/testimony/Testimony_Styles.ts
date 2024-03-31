@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
 
 const StyledTestimony = styled.section`
   padding-top: 100px;
-
+  @media ${theme.media.tablet} {
+    padding: 50px 0;
 `
 
 const Mail = styled.span`

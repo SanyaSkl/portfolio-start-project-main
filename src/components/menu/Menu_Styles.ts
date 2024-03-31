@@ -18,7 +18,7 @@ const StyledMenu = styled.nav`
   }
 `
 
-const ListItem = styled.li`
+const MenuItem = styled.li`
 
 `
 
@@ -35,5 +35,5 @@ const Link = styled.a`
 `
 
 export const S = {
-    Link, ListItem, StyledMenu
+    Link, MenuItem, StyledMenu
 }

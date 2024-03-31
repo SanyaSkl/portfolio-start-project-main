@@ -7,7 +7,7 @@ import {Accent} from "../../../components/Accent";
 import { S } from './Main_Styled';
 
 
-export const Main = () => {
+export const Main: React.FC = () => {
     return (
         <S.StyledMain>
             <Container>

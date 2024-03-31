@@ -6,7 +6,7 @@ import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../
 import {Accent} from "../../../components/Accent";
 import {S} from './Main_Styled';
 import Typewriter from 'typewriter-effect'
-
+import Tilt from 'react-parallax-tilt'
 
 export const Main: React.FC = () => {
     return (
@@ -17,8 +17,8 @@ export const Main: React.FC = () => {
                         <S.SpanTitle>Hi 👋,</S.SpanTitle>
                         <S.SpanTitle> My name is </S.SpanTitle>
                         <S.Name><Accent>Sklyarenko AA</Accent></S.Name>
-                        {/*<S.MainTitle>I Frontend Developer</S.MainTitle>*/}
                         <S.MainTitle>
+                            <p>I Frontend Developer</p>
                             <Typewriter
                                 options={{
                                     strings: ['I Frontend Developer'],
@@ -34,7 +34,14 @@ export const Main: React.FC = () => {
                         <Rectangle3/>
                         <Rectangle4/>
                         <Rectangle5/>
-                        <S.Photo src={photo}/>
+                        <Tilt
+                            glareEnable={true}
+                            glareMaxOpacity={0.9}
+                            glareColor="lightblue"
+                            glarePosition="all"
+                            glareBorderRadius="20px"
+                        >
+                            <S.Photo src={photo}/></Tilt>
                     </S.Abstract>
                 </FlexWrapper>
             </Container>

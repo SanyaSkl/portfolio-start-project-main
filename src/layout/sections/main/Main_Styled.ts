@@ -62,6 +62,10 @@ const MainTitle = styled.h1`
   text-align: left;
   letter-spacing: -1px;
   white-space: nowrap;
+  
+  p {
+    display: none;
+  }
 `
 
 const SpanTitle = styled.span`

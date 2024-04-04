@@ -35,11 +35,13 @@ export const Main: React.FC = () => {
                         <Rectangle4/>
                         <Rectangle5/>
                         <Tilt
-                            glareEnable={true}
-                            glareMaxOpacity={0.9}
-                            glareColor="lightblue"
-                            glarePosition="all"
-                            glareBorderRadius="20px"
+                            className="parallax-effect-img"
+                            tiltMaxAngleX={40}
+                            tiltMaxAngleY={40}
+                            perspective={800}
+                            transitionSpeed={1500}
+                            scale={1.1}
+                            gyroscope={true}
                         >
                             <S.Photo src={photo}/></Tilt>
                     </S.Abstract>

@@ -4,6 +4,7 @@ import {Button} from "../../../components/Button";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Works = styled.section`
+  position: relative;
   min-height: 100%;
   @media ${theme.media.tablet} {
     padding: 60px 0;

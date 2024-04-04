@@ -17,6 +17,7 @@ const SkillTitle = styled.h3`
 `
 
 const StyledSkills = styled.section`
+  position: relative;
   @media ${theme.media.tablet} {
     padding: 60px 0;
 `

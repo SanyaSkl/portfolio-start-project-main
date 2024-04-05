@@ -2,15 +2,14 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
 
-const StyledMain = styled.section`
+const Main = styled.section`
   min-height: 100%;
   display: flex;
 `
 
-const StyledTitle = styled.div`
+const Title = styled.div`
   letter-spacing: -1px;
   text-align: left;
-  font-size: 58px;
   width: 700px;
 
   @media ${theme.media.tablet} {
@@ -69,8 +68,7 @@ const MainTitle = styled.h1`
 `
 
 const SpanTitle = styled.span`
-  color: ${theme.colors.h1};
-  ${font({weight: 700, Fmax: 58, Fmin: 32})}
+  ${font({weight: 700, Fmax: 58, Fmin: 32, color: theme.colors.h1})}
   display: flex;
   justify-content: flex-start;
   letter-spacing: -1px;
@@ -83,5 +81,5 @@ const Name = styled.h2`
 `
 
 export const S = {
-    Name, SpanTitle, MainTitle, Abstract, Photo, StyledTitle, StyledMain
+    Name, SpanTitle, MainTitle, Abstract, Photo, Title, Main
 }

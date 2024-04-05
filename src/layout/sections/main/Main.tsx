@@ -10,10 +10,10 @@ import Tilt from 'react-parallax-tilt'
 
 export const Main: React.FC = () => {
     return (
-        <S.StyledMain>
+        <S.Main id={"home"}>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
-                    <S.StyledTitle>
+                    <S.Title>
                         <S.SpanTitle>Hi 👋,</S.SpanTitle>
                         <S.SpanTitle> My name is </S.SpanTitle>
                         <S.Name><Accent>Sklyarenko AA</Accent></S.Name>
@@ -27,7 +27,7 @@ export const Main: React.FC = () => {
                                 }}
                             />
                         </S.MainTitle>
-                    </S.StyledTitle>
+                    </S.Title>
                     <S.Abstract>
                         <Rectangle1/>
                         <Rectangle2/>
@@ -47,7 +47,7 @@ export const Main: React.FC = () => {
                     </S.Abstract>
                 </FlexWrapper>
             </Container>
-        </S.StyledMain>
+        </S.Main>
     );
 };
 

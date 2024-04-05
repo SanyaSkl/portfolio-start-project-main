@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {Button} from "../../../components/Button";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {font} from "../../../styles/Common";
 
 const Works = styled.section`
   position: relative;
@@ -86,8 +87,7 @@ const Description = styled.div`
 `
 
 const Title = styled.h3`
-  font-size: 28px;
-  font-weight: 500;
+  ${font({weight: 500, Fmax: 28, Fmin: 22})}
   letter-spacing: 0;
   text-align: center;
 `

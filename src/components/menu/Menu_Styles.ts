@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Link} from "react-scroll";
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -26,18 +27,19 @@ const MenuItem = styled.li`
 
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: ${theme.colors.menu};
   font-family: DM Sans, sans-serif;
   font-size: 20px;
   letter-spacing: 0;
   text-align: center;
   
-  &:hover{
+  &:hover, &.active {
     color: ${theme.colors.accent};
+    cursor: pointer;
   }
 `
 
 export const S = {
-    Link, MenuItem, StyledMenu
+    NavLink, MenuItem, StyledMenu
 }

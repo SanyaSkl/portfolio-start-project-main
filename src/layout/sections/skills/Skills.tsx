@@ -52,7 +52,7 @@ const skillData = [
 
 export const Skills = () => {
     return (
-        <S.StyledSkills>
+        <S.Skills id={"techStack"}>
             <Container>
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <StyledSpan>Technologies I’ve been working with recently</StyledSpan>
@@ -67,7 +67,7 @@ export const Skills = () => {
                     })}
                 </FlexWrapper>
             </Container>
-        </S.StyledSkills>
+        </S.Skills>
     );
 };
 

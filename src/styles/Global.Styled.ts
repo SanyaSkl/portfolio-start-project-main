@@ -59,12 +59,6 @@ export const GlobalStyled = createGlobalStyle`
     color: ${theme.colors.h2};
   }
 
-  h3 {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0;
-  }
-
   p {
     line-height: 1.4;
   }

@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from "../../assets/images/front-end-logo.png";
 import styled from "styled-components";
+import {animateScroll as scroll} from "react-scroll";
 
 
 export const Logo:React.FC = () => {
     return (
-        <LinkLogo href="#">
+        <LinkLogo onClick={() => {scroll.scrollToTop()}}>
             <StyledLogo src={logo} alt='logo'/>
         </LinkLogo>
     );

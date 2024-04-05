@@ -16,12 +16,12 @@ const SkillTitle = styled.h3`
   text-align: center;
 `
 
-const StyledSkills = styled.section`
+const Skills = styled.section`
   position: relative;
   @media ${theme.media.tablet} {
     padding: 60px 0;
 `
 
 export const S = {
-  StyledSkills, SkillTitle, StyledSkill
+  Skills, SkillTitle, StyledSkill
 }

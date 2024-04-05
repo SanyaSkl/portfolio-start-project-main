@@ -13,7 +13,7 @@ type WorkPropsType = {
 
 export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     return (
-        <S.Work>
+        <S.Work id={"projects"}>
             <S.ImageWrapper>
                 <S.Image src={props.src} alt=""/>
                 <Button>VIEW PROJECT</Button>

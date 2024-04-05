@@ -1,12 +1,13 @@
 import React from 'react';
 import {S} from './Menu_Styles';
 
+const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 
-export const Menu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+export const Menu: React.FC = () => {
     return (
         <S.StyledMenu>
             <ul>
-                {props.menuItems.map((item, index) => {
+                {items.map((item, index) => {
                     return <S.MenuItem key={index}>
                         <S.Link href="#">{item}</S.Link>
                     </S.MenuItem>

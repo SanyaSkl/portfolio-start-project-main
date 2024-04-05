@@ -7,7 +7,6 @@ import {Accent} from "../../../components/Accent";
 import {Menu} from "../../../components/menu/Menu";
 import { S } from './Footer_Styles';
 
-const items = ["Home", "About", "Tech Stack", "Projects", "Contact"]
 
 export const Footer: React.FC = () => {
     return (
@@ -20,7 +19,7 @@ export const Footer: React.FC = () => {
                     <LinkSocial/>
                 </FlexWrapper>
                 <S.MenuWrapper>
-                    <Menu menuItems={items}/>
+                    <Menu />
                     <S.Copyright>Designed and built by
                         <Accent>Sklyarenko AA</Accent>
                         together with

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
+
 const SocialList = styled.ul`
   display: flex;
   gap: 10px;

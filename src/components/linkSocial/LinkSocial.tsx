@@ -5,7 +5,7 @@ import {S} from './LinkSocial_Styles';
 const socialItemsData = [
     {
         iconId: "socialIconEmail",
-        href: "sanyaskl2012@gmail.com"
+        href: "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTHVcBbSCCzZgThsnnbKCKWgjBzpmJrMVFKnVRxNBXGHdHKlhwppKWJqjvLCsLdbGlbCqV"
     },
     {
         iconId: "socialIconGit",
@@ -24,9 +24,9 @@ export const LinkSocial: React.FC = () => {
                 return (
                     <S.SocialItem key={index}>
                         <S.SocialLink href={s.href}>
-                            <Icon height={"32px"}
-                                  width={"32px"}
-                                  viewBox={"0 0 32px 32px"}
+                            <Icon height={"32"}
+                                  width={"32"}
+                                  viewBox={"0 0 32 32"}
                                   iconId={s.iconId}/>
                         </S.SocialLink>
                     </S.SocialItem>

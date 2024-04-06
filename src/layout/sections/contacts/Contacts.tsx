@@ -10,7 +10,7 @@ export const Contacts: React.FC = () => {
         <S.Contacts id={"contact"}>
             <FlexWrapper justify={"center"} direction={"column"}>
                 <SectionTitle>For any questions please mail me:</SectionTitle>
-                <S.Mail href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" >
+                <S.Mail href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJTHVcBbSCCzZgThsnnbKCKWgjBzpmJrMVFKnVRxNBXGHdHKlhwppKWJqjvLCsLdbGlbCqV">
                     <Accent>sanyaskl2012@gmail.com</Accent>
                 </S.Mail>
             </FlexWrapper>

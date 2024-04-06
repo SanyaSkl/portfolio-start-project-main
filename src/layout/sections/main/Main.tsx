@@ -6,7 +6,6 @@ import {Rectangle1, Rectangle2, Rectangle3, Rectangle4, Rectangle5} from "../../
 import {Accent} from "../../../components/Accent";
 import {S} from './Main_Styled';
 import Typewriter from 'typewriter-effect'
-import Tilt from 'react-parallax-tilt'
 
 export const Main: React.FC = () => {
     return (
@@ -34,16 +33,7 @@ export const Main: React.FC = () => {
                         <Rectangle3/>
                         <Rectangle4/>
                         <Rectangle5/>
-                        <Tilt
-                            className="parallax-effect-img"
-                            tiltMaxAngleX={40}
-                            tiltMaxAngleY={40}
-                            perspective={800}
-                            transitionSpeed={1500}
-                            scale={1.1}
-                            gyroscope={true}
-                        >
-                            <S.Photo src={photo}/></Tilt>
+                            <S.Photo src={photo}/>
                     </S.Abstract>
                 </FlexWrapper>
             </Container>

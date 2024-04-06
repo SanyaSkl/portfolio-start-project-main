@@ -4,15 +4,17 @@ import {S} from './LinkSocial_Styles';
 
 const socialItemsData = [
     {
-        iconId: "socialIconGit"
+        iconId: "socialIconEmail",
+        href: "sanyaskl2012@gmail.com"
     },
     {
-        iconId: "socialIconTwitter"
+        iconId: "socialIconGit",
+        href: "https://github.com/SanyaSkl"
     },
     {
-        iconId: "socialIconLinkedIn"
+        iconId: "socialIconTelegram",
+        href: "https://t.me/SanyaStOskol"
     },
-
 ]
 
 export const LinkSocial: React.FC = () => {
@@ -21,7 +23,7 @@ export const LinkSocial: React.FC = () => {
             {socialItemsData.map((s, index) => {
                 return (
                     <S.SocialItem key={index}>
-                        <S.SocialLink href={"#"}>
+                        <S.SocialLink href={s.href}>
                             <Icon height={"32px"}
                                   width={"32px"}
                                   viewBox={"0 0 32px 32px"}

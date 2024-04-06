@@ -33,7 +33,7 @@ export const Menu: React.FC = () => {
                                 to={item.href}
                                 smooth={true}
                                 spy={true}
-                                offset={-310}
+                                offset={-308}
                             >
                                 {item.title}</S.NavLink>
                         </S.MenuItem>
